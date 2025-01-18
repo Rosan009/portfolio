@@ -1,0 +1,134 @@
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .content-wrapper {
+      padding: 15px;
+    }
+  }
+  
+  /* Title */
+  .title {
+    font-size: 3.5em;
+    margin-bottom: 0.5em;
+    color: #ffffff;
+    background: linear-gradient(90deg, #00b4d8, #90e0ef, #caf0f8); /* New gradient colors */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientShift 3s ease-in-out infinite;
+  }
+  
+  @media (max-width: 768px) {
+    .title {
+      font-size: 3em;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .title {
+      font-size: 2.5em;
+    }
+  }
+  
+  /* Subtitle */
+  .subtitle {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #ffffff;
+    background: linear-gradient(90deg, #00b4d8, #90e0ef, #caf0f8); /* New gradient colors */
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: typing 4s steps(20, end) infinite alternate, blink 0.8s step-end infinite, gradientShift 3s ease-in-out infinite;
+  }
+  
+  @media (max-width: 768px) {
+    .subtitle {
+      font-size: 2em;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .subtitle {
+      font-size: 1.8em;
+    }
+  }
+  
+  /* Description */
+  .description {
+    font-size: 1.2em;
+    max-width: 700px;
+    line-height: 1.6;
+    color: #f1faee; /* Light text color */
+  }
+  
+  @media (max-width: 768px) {
+    .description {
+      font-size: 1em;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .description {
+      font-size: 0.9em;
+    }
+  }
+  
+  /* StyledImage */
+  .styled-image {
+    width: 320px;
+    height: 320px;
+    background-color: transparent;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  
+  .styled-image:hover {
+    transform: scale(1.1);
+  }
+  
+  @media (max-width: 768px) {
+    .styled-image {
+      width: 250px;
+      height: 250px;
+    }
+  
+    .styled-image:hover {
+      transform: scale(1);
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .styled-image {
+      width: 200px;
+      height: 200px;
+    }
+  
+    .styled-image:hover {
+      transform: scale(1.1);
+    }
+  }
+  
+  /* Keyframe Animations */
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  @keyframes blink {
+    50% { border-color: transparent; }
+  }
+  
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  

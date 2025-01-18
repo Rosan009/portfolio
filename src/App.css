@@ -4,133 +4,128 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-}
-
-body {
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
     background-image: url("https://e0.pxfuel.com/wallpapers/846/344/desktop-wallpaper-portfolio.jpg");
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: Arial, sans-serif;
-}
-
-.container-div {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Container for title and description */
+  .container-div {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: transparent;
     margin-top: 4rem;
-}
-
-h1, h2, p {
+    flex-direction: column;
+  }
+  
+  /* Heading and Paragraph Styles */
+  h1, h2, p {
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.icon-container {
-    display: none; /* Hidden by default */
-}
-
-/* Mobile Devices */
-@media (max-width: 480px) {
+    text-align: center; /* Ensure text is centered */
+   
+  }
+  
+  /* Icon container for the floating button */
+  .icon-container {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 2rem;
+    color: #007BFF;
+    z-index: 1000;
+  }
+  
+  .icon-container:hover {
+    cursor: pointer;
+  }
+  
+  /* Mobile Devices */
+  @media (max-width: 480px) {
     body {
-        font-size: 14px;
+      font-size: 14px;
     }
-
-    nav {
-        flex-direction: column;
-    }
-
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
+  
     .container-div {
-        flex-direction: column;
+      flex-direction: column;
     }
-
+  
     .projects {
-        flex-wrap: wrap;
-        align-items: center;
-        gap: 2rem;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2rem;
     }
-
+  
     .project {
-        width: 100%;
-        height: auto;
+      width: 100%;
+      height: auto;
     }
-
+  
     .skills-wrapper {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
     }
-
+  
     .footer-content {
-        padding: 10px;
+      padding: 10px;
     }
-
+  
     #contact {
-        flex-direction: column;
+      flex-direction: column;
     }
-
+  
     input, textarea {
-        padding: 0.5rem;
-        width: 100%;
+      padding: 0.5rem;
+      width: 100%;
     }
-
+  
     .icon-container {
-        display: block; /* Show the icon */
-        position: fixed;
-        bottom: 10px;
-        right: 10px;
-        font-size: 2rem;
-        color: #007BFF;
-        z-index: 1000;
+      display: block; /* Show the icon */
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      font-size: 2rem;
+      color: #007BFF;
+      z-index: 1000;
     }
-}
-
-/* Tablet Devices */
-@media (min-width: 481px) and (max-width: 768px) {
+  }
+  
+  /* Tablet Devices */
+  @media (min-width: 481px) and (max-width: 768px) {
     body {
-        font-size: 16px;
+      font-size: 16px;
     }
-
-    nav {
-        flex-direction: row;
-    }
-
-    nav ul {
-        flex-direction: row;
-    }
-
-    nav ul li {
-        margin: 0 20px;
-    }
-
+  
     .container-div {
-        flex-direction: row;
+      flex-direction: row;
     }
-
+  
     .projects {
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
     }
-
+  
     .skills-wrapper {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
     }
-
+  
     .footer-content {
-        padding: 20px;
+      padding: 20px;
     }
-}
+  }
+  

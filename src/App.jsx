@@ -1,7 +1,6 @@
 import './App.css';
 import Nav from './Component/nav/Nav';
-import Content from './Component/Content';
-import Image from './Component/Image';
+import Content from './Component/content/Content';
 import Skill from './Component/Skill/Skill';
 import Project from './Component/projects/Projects';
 import Footer from './Component/Footer/Footer';
@@ -18,7 +17,6 @@ function App() {
           <div className="container">
             <div className="container-div">
               <Content />
-              <Image />
             </div>
           </div>
         </section>
