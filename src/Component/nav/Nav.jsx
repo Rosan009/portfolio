@@ -44,8 +44,8 @@ const Nav = () => {
         <li className={activeSection === 'home' ? 'active' : ''}>
           <a href="#home" className="link">Home</a>
         </li>
-        <li className={activeSection === 'about' ? 'active' : ''}>
-          <a href="#about" className="link">About</a>
+        <li className={activeSection === 'skill' ? 'active' : ''}>
+          <a href="#skill" className="link">Skill</a>
         </li>
         <li className={activeSection === 'project' ? 'active' : ''}>
           <a href="#project" className="link">Project</a>
