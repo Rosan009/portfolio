@@ -1,8 +1,8 @@
 import React from 'react';
 import "./Project.css";
 
-// Font Awesome Icons (New Icons)
-import { FaHamburger, FaRegBuilding, FaGamepad, FaCalculator, FaClipboardList } from 'react-icons/fa'; // New icons
+// Font Awesome Icons
+import { FaHamburger, FaRegBuilding, FaGamepad, FaCalculator, FaShoppingCart, FaUserGraduate, FaUtensils, FaClipboardList } from 'react-icons/fa'; // Updated icons
 
 export default function Project() {
     const projects = [
@@ -20,19 +20,19 @@ export default function Project() {
         },
         {
             title: "student-mark",
-            icon: <FaGamepad />, // Icon for Student Mark (Tic-Tac-Toe)
+            icon: <FaUserGraduate />, // Icon for Student Mark (Tic-Tac-Toe)
             description: "This is a gaming project using React JS. The game depends on the player's move. The player will win or draw depending on their move.",
             github: "https://github.com/Rosan009/tic-tac-toe"
         },
         {
             title: "ecommerce",
-            icon: <FaCalculator />, // Icon for Ecommerce
+            icon: <FaShoppingCart />, // Icon for Ecommerce
             description: "The Investment Calculator is useful for everyone. It will calculate annual investment based on the amount invested and the duration.",
             github: "https://github.com/Rosan009/React-Investment-Calculator"
         },
         {
             title: "food-recipe",
-            icon: <FaHamburger />, // Icon for Food Recipe
+            icon: <FaUtensils />, // Icon for Food Recipe
             description: "The Investment Calculator is useful for everyone. It will calculate annual investment based on the amount invested and the duration.",
             github: "https://github.com/Rosan009/React-Investment-Calculator"
         },
@@ -46,11 +46,12 @@ export default function Project() {
 
     return (
         <div>
+            <div className="container-project">
             <h1 className="project-title">My Projects</h1>
             <div className="projects">
                 {projects.map((project, index) => (
                     <div className="project" key={index}>
-                        <div className="project-icon">{project.icon}</div> {/* Display the new icon */}
+                        <div className="project-icon">{project.icon}</div> {/* Display the updated icon */}
                         <div className="title-container">
                             <h2>{project.title}</h2>
                         </div>
@@ -62,7 +63,9 @@ export default function Project() {
                         </div>
                     </div>
                 ))}
+            </div> 
             </div>
+           
         </div>
     );
 }
