@@ -1,15 +1,18 @@
 import React, { useEffect } from 'react';
 import './Skill.css';
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaJava, FaGitAlt, FaDatabase, FaAws } from 'react-icons/fa'; // Import AWS icon
+import { SiSpringboot } from 'react-icons/si';
 
 const skills = [
-  { name: 'HTML', percentage: '90%', img: 'src/Component/Img/images-removebg-preview.png' },
-  { name: 'CSS', percentage: '80%', img: 'src/Component/Img/images__1_-removebg-preview.png' },
-  { name: 'JavaScript', percentage: '80%', img: 'src/Component/Img/png-clipart-javascript-logo-product-design-brand-angularjs-dashboard-templates-angle-text-thumbnail-removebg-preview.png' },
-  { name: 'React', percentage: '77%', img: 'src/Component/Img/png-transparent-react-computer-icons-redux-javascript-others-logo-symmetry-nodejs-thumbnail-removebg-preview.png' },
-  { name: 'Java', percentage: '70%', img: 'src/Component/Img/java-removebg-preview.png' },
-  { name: 'SpringBoot', percentage: '75%', img: 'src/Component/Img/spring Boot.png' },
-  { name: 'MySQL', percentage: '73%', img: 'src/Component/Img/download__1_-removebg-preview.png' },
-  { name: 'Git', percentage: '60%', img: 'src/Component/Img/images__2_-removebg-preview.png' } // Added Git skill
+  { name: 'HTML', percentage: '90%', icon: <FaHtml5 /> },
+  { name: 'CSS', percentage: '80%', icon: <FaCss3Alt /> },
+  { name: 'JavaScript', percentage: '80%', icon: <FaJs /> },
+  { name: 'React', percentage: '77%', icon: <FaReact /> },
+  { name: 'Java', percentage: '70%', icon: <FaJava /> },
+  { name: 'SpringBoot', percentage: '75%', icon: <SiSpringboot /> },
+  { name: 'PostgreSQL', percentage: '73%', icon: <FaDatabase /> },
+  { name: 'Git', percentage: '60%', icon: <FaGitAlt /> },
+  { name: 'AWS', percentage: '65%', icon: <FaAws /> } // Added AWS skill
 ];
 
 export default function Skill() {
@@ -22,25 +25,28 @@ export default function Skill() {
 
   return (
     <>
-     <h1>My Skills</h1>
-     <div className="skills-wrapper">
-      {skills.map((skill, index) => (
-        <div className="skill-card" key={index}>
-          <div className="skill-image-wrapper">
-            <img src={skill.img} alt={skill.name} className="skill-image" />
-            <span className="skill-name">{skill.name}</span>
-          </div>
-          <div className="skill-info">
-            <div className="skill-progress-container">
-              <div className="skill-progress">
-                <div className="skill-progress-bar"></div>
+    <div className="container-skill">
+    <h1 className="skills-title">My Skills</h1>
+      <div className="skills-wrapper">
+        {skills.map((skill, index) => (
+          <div className="skill-card" key={index}>
+            <div className="skill-icon-wrapper">
+              {skill.icon && <span className="skill-icon">{skill.icon}</span>}
+              <span className="skill-name">{skill.name}</span>
+            </div>
+            <div className="skill-info">
+              <div className="skill-progress-container">
+                <div className="skill-progress">
+                  <div className="skill-progress-bar"></div>
+                </div>
+                <span className="skill-percentage">{skill.percentage}</span>
               </div>
-              <span className="skill-percentage">{skill.percentage}</span>
             </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
+     
     </>
   );
 }
