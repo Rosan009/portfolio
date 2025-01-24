@@ -51,7 +51,7 @@ const Nav = () => {
           <a href="#project" className="link">Project</a>
         </li>
         <li className={activeSection === 'contact' ? 'active' : ''}>
-          <a href="#contact" className="link">Contact</a>
+          <a href="#contact" className="link">Experience</a>
         </li>
       </ul>
     </nav>

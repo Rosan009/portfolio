@@ -1,0 +1,92 @@
+#contact {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+.head {
+  font-size: 2.5em;
+  color: #00b4d8;
+  background: linear-gradient(90deg, #00b4d8, #90e0ef, #caf0f8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Flex container for internship experiences */
+.internship-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Center align the items */
+}
+
+.internship-experience {
+  flex: 1 1 calc(45% - 20px); /* Flexbox item: takes ~45% width */
+  min-width: 300px; /* Ensures cards don't shrink too small */
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.internship-experience:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.internship-experience h3 {
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.internship-experience p {
+  font-size: 1em;
+  color: #555;
+  margin: 5px 0;
+}
+
+.internship-experience ul {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.internship-experience ul li {
+  font-size: 1em;
+  color: #333;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.internship-experience ul li::before {
+  content: '•'; /* Bullet point styling */
+  color: #0078a3;
+  font-weight: bold;
+  display: inline-block;
+  width: 15px;
+  margin-left: -15px;
+}
+
+@media (max-width: 768px) {
+  .internship-container {
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .internship-experience {
+    flex: 1 1 100%; /* Take full width on smaller screens */
+  }
+
+  .head {
+    font-size: 2em;
+  }
+}

@@ -4,7 +4,7 @@ import Content from './Component/content/Content';
 import Skill from './Component/Skill/Skill';
 import Project from './Component/projects/Projects';
 import Footer from './Component/Footer/Footer';
-import Contact from './Component/contact/Contact';
+import Experience from './Component/experience/Experience';
 
 function App() {
   return (
@@ -27,7 +27,7 @@ function App() {
           <Project />
         </section>
         <section id="contact">
-          <Contact />
+          <Experience/>
         </section>
       </main>
       <footer>
