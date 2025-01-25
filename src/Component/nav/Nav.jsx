@@ -5,7 +5,7 @@ import './Nav.css';
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState('home');
+  const [activeSection, setActiveSection] = useState('');
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -14,7 +14,7 @@ const Nav = () => {
   useEffect(() => {
     const handleScroll = () => {
       const sections = document.querySelectorAll('section');
-      let currentSection = 'home';
+      let currentSection = '/';
       sections.forEach((section) => {
         const sectionTop = section.offsetTop - 50;
         if (window.scrollY >= sectionTop) {

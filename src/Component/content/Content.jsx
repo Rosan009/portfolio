@@ -3,8 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './Content.css';
 import { FaEnvelope, FaPhoneAlt, FaFileDownload } from 'react-icons/fa';
-import profileImage from '../Img/IMG_20240217_221023_251-removebg-preview.png'; // Adjust the path as necessary
-
+import profileImage from '../Img/IMG-20240908-WA0021-removebg.png'; // Adjust the path as necessary
 export default function App() {
   useEffect(() => {
     AOS.init({ duration: 100000 }); // Initialize AOS with a default animation duration
@@ -30,10 +29,11 @@ export default function App() {
 
         {/* Contact Links */}
         <div className="contact" data-aos="fade-left">
-          <a href="/resume.pdf" download className="contact-link">
+          <a href="/resume-rosan.pdf" download className="contact-link">
             <FaFileDownload className="icon" />
-            Resume
+             Resume
           </a>
+
           <a href="tel:+919025735617" className="contact-link">
             <FaPhoneAlt className="icon" />
             Contact

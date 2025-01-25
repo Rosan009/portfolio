@@ -17,7 +17,7 @@ export const Contact = () => {
       </p>
       <div className="contact-details">
         <p data-aos="fade-up">
-          <FaCode className="contact-icon blue-icon" /> <strong>Role:</strong> Java Full Stack Developer
+          <FaCode className="contact-icon blue-icon" /> Java Full Stack Developer
         </p>
         <p data-aos="fade-up">
           <FaMapMarkerAlt className="contact-icon blue-icon" /> Tirunelveli, Tamil Nadu, 627414
@@ -31,7 +31,6 @@ export const Contact = () => {
           <a href="tel:+919025735617">+91-9025735617</a>
         </p>
       </div>
-      {/* GitHub, LinkedIn, and WhatsApp Icons */}
       <div className="contact-icons">
         <a
           href="https://github.com/Rosan009"

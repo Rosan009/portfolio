@@ -28,25 +28,25 @@ export default function Project() {
             title: "student-mark",
             icon: <FaUserGraduate />, // Icon for Student Mark (Tic-Tac-Toe)
             description: "This is a gaming project using React JS. The game depends on the player's move. The player will win or draw depending on their move.",
-            github: "https://github.com/Rosan009/tic-tac-toe"
+            github: "https://github.com/Rosan009/Student-MarkSheet"
         },
         {
             title: "ecommerce",
             icon: <FaShoppingCart />, 
             description: "The Investment Calculator is useful for everyone. It will calculate annual investment based on the amount invested and the duration.",
-            github: "https://github.com/Rosan009/React-Investment-Calculator"
+            github: "https://github.com/Rosan009/E-commerce"
         },
         {
             title: "food-recipe",
             icon: <FaUtensils />, 
             description: "The Investment Calculator is useful for everyone. It will calculate annual investment based on the amount invested and the duration.",
-            github: "https://github.com/Rosan009/React-Investment-Calculator"
+            github: "https://github.com/Rosan009/food-recipe"
         },
         {
             title: "task-management-system",
             icon: <FaClipboardList />, 
             description: "The Investment Calculator is useful for everyone. It will calculate annual investment based on the amount invested and the duration.",
-            github: "https://github.com/Rosan009/React-Investment-Calculator"
+            github: "https://github.com/Rosan009/CollegeApp"
         }
     ];
 
