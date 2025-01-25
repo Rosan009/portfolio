@@ -5,11 +5,11 @@ import './Experience.css';
 
 const Experience = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000 }); // Initialize AOS with a default animation duration
+    AOS.init({ duration: 1000 }); 
   }, []);
 
   return (
-    <section id="contact">
+    <section id="experience">
       <h2 className="head" data-aos="fade-down">Internship Experience</h2>
 
       <div className="internship-container">

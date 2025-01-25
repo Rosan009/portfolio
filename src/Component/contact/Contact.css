@@ -1,0 +1,72 @@
+.contact-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+    background: #f9f9fb;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .contact-name {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 20px;
+  }
+  
+  .contact-details p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .contact-icon {
+    margin-right: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .blue-icon {
+    color: #007bff; /* Blue color for Role, Phone, Mail, and Location icons */
+  }
+  
+  .contact-details a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .contact-details a:hover {
+    color: #007bff; /* Hover effect for links */
+    text-decoration: underline;
+  }
+  
+  .contact-icons {
+    margin-top: 20px;
+  }
+  
+  .icon-link {
+    margin: 0 10px;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .icon-link:hover {
+    color: #007bff; 
+  }
+  
+  .icon {
+    font-size: 2rem;
+  }
+  
+  
+  
