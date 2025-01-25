@@ -1,3 +1,4 @@
+/* Footer Styles */
 .footer-content {
   text-align: center;
   padding: 20px;
@@ -12,7 +13,25 @@
 .footer-content a {
   margin: 0 5px;
   text-decoration: none;
-  color: #0073b1; 
+  color: #0073b1; /* LinkedIn Blue */
 }
 
+.footer-content a:hover {
+  text-decoration: underline; /* Add underline effect on hover */
+}
 
+/* Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .footer-content {
+    padding: 15px;
+    font-size: 0.9rem; /* Smaller text on mobile */
+  }
+
+  .footer-content p {
+    margin: 8px 0; /* Adjust space for small screens */
+  }
+
+  .footer-content a {
+    font-size: 1.1rem; /* Larger link text for mobile */
+  }
+}

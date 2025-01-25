@@ -80,13 +80,74 @@
 @media (max-width: 768px) {
   .internship-container {
     flex-direction: column; /* Stack items vertically */
+    gap: 15px; /* Reduced gap between items for mobile */
   }
 
   .internship-experience {
-    flex: 1 1 100%; /* Take full width on smaller screens */
+    flex: 1 1 100%; /* Ensure full width for each internship item */
+    margin-bottom: 10px; /* Adjust the margin to avoid excess space between items */
+    padding: 15px; /* Adjust padding for smaller screens */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    background: #f9f9f9; /* Keep background consistent */
   }
 
   .head {
-    font-size: 2em;
+    font-size: em; /* Adjust heading size for smaller screens */
+    margin-bottom: 15px; /* Added margin for spacing */
+    text-align: center; /* Center align the heading */
+  }
+
+  .internship-experience h3 {
+    font-size: 1.5em; /* Reduce the size of the heading text */
+    color: #333; /* Ensure readability */
+  }
+
+  .internship-experience p {
+    font-size: 1em; /* Maintain readability but adjust for mobile screens */
+  }
+
+  .internship-experience ul li {
+    font-size: 0.95em; /* Adjust list item font size for readability */
+  }
+}
+
+@media (max-width: 480px) {
+  #experience {
+    padding: 5px; /* Further reduced padding for smaller screens */
+    overflow: hidden; /* Prevent content from overflowing */
+  }
+
+  .head {
+    font-size: 1em; /* Adjusted to a reasonable size for mobile */
+    margin-bottom: 5px; /* Reduced margin for better spacing */
+  }
+
+  .internship-container {
+    flex-direction: column; /* Stack the internship cards vertically */
+    gap: 10px; /* Reduced gap between items */
+  }
+
+  .internship-experience {
+    flex: 1 1 100%; /* Take full width on mobile screens */
+    margin-bottom: 10px; /* Reduced margin bottom for better fit */
+    padding: 10px; /* Reduced padding for compactness */
+    max-width: 100%; /* Ensures the boxes take the full width */
+    box-sizing: border-box; /* Ensure padding is included in the box size */
+  }
+
+  .internship-experience h3 {
+    font-size: 1.2em; /* Adjust heading size for smaller screens */
+  }
+
+  .internship-experience p {
+    font-size: 0.9em; /* Reduced font size for mobile readability */
+  }
+
+  .internship-experience ul li {
+    font-size: 0.85em; /* Slightly smaller list items */
+  }
+
+  .internship-experience ul {
+    padding-left: 10px; /* Reduced padding for list */
   }
 }

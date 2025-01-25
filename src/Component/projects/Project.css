@@ -114,20 +114,54 @@
 /* Responsiveness for smaller screens */
 @media (max-width: 768px) {
     .projects {
-        gap: 15px;
-        padding: 10px;
+      gap: 15px;
+      padding: 10px;
     }
-
+  
     .project {
-        width: 100%;
+      width: 100%;
     }
-
+  
     .title-container {
-        font-size: 1.1em;
+      font-size: 1.1em;
     }
-
+  
     .overlay {
-        font-size: 0.9em;
+      font-size: 0.9em;
     }
-}
+  }
+  
+  /* Mobile Devices (max-width: 480px) */
+  @media (max-width: 480px) {
+    .projects {
+      gap: 10px;
+      padding: 5px;
+    }
+  
+    .project {
+      width: 100%; /* Full width for mobile */
+      padding: 15px; /* Adjust padding for smaller screens */
+    }
+  
+    .title-container {
+      font-size: 1em;
+    }
+  
+    .overlay {
+      font-size: 0.85em;
+    }
+  
+    .project-icon {
+      font-size: 50px; /* Slightly smaller icon */
+    }
+  
+    .project-title {
+      font-size: 1.5em; /* Adjust font size for mobile */
+    }
+  
+    .github-link {
+      font-size: 0.8em;
+      padding: 6px 10px; /* Smaller button on mobile */
+    }
+  }
  

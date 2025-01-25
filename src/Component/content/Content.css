@@ -163,24 +163,82 @@
     font-size: 1.5em;
 }
 
-/* Responsive Adjustments */
+/* General adjustments for smaller screens */
 @media (max-width: 768px) {
+    .content-wrapper {
+        padding: 15px;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    /* Title */
+    .title {
+        font-size: 3em;
+    }
+
+    /* Subtitle */
+    .subtitle {
+        font-size: 2em;
+    }
+
+    /* Description */
+    .description {
+        font-size: 1em;
+    }
+
+    /* StyledImage */
+    .styled-image {
+        width: 250px;
+        height: 250px;
+    }
+
+    .styled-image:hover {
+        transform: scale(1);
+    }
+
+    /* Contact Section */
     .contact {
         flex-direction: column;
         gap: 15px;
         text-align: center;
     }
 
-    .icon {
-        font-size: 1.3em;
-    }
-
     .contact-link {
         font-size: 1em;
+    }
+
+    .icon {
+        font-size: 1.3em;
     }
 }
 
 @media (max-width: 576px) {
+    .content-wrapper {
+        padding: 10px;
+    }
+
+    /* Title */
+    .title {
+        font-size: 2.5em;
+    }
+
+    /* Subtitle */
+    .subtitle {
+        font-size: 1.8em;
+    }
+
+    /* Description */
+    .description {
+        font-size: 0.9em;
+    }
+
+    /* StyledImage */
+    .styled-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* Contact Section */
     .contact {
         gap: 10px;
     }

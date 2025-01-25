@@ -68,5 +68,89 @@
     font-size: 2rem;
   }
   
-  
+  /* General adjustments for smaller screens */
+@media (max-width: 768px) {
+  .contact-container {
+      padding: 15px;
+      max-width: 90%;
+      margin: 0 10px;
+  }
+
+  .contact-title {
+      font-size: 1.8rem;
+  }
+
+  .contact-name {
+      font-size: 1.1rem;
+  }
+
+  .contact-details p {
+      font-size: 1rem;
+  }
+
+  .contact-icon {
+      font-size: 1.5rem;
+      margin-right: 8px;
+  }
+
+  .contact-details a {
+      font-size: 1rem;
+  }
+
+  .contact-icons {
+      margin-top: 15px;
+  }
+
+  .icon-link {
+      font-size: 1.5rem;
+      margin: 0 8px;
+  }
+
+  .icon {
+      font-size: 1.5rem;
+  }
+}
+
+/* Further adjustments for very small screens (e.g., phones) */
+@media (max-width: 576px) {
+  .contact-container {
+      padding: 10px;
+      max-width: 100%;
+  }
+
+  .contact-title {
+      font-size: 1.6rem;
+  }
+
+  .contact-name {
+      font-size: 1rem;
+  }
+
+  .contact-details p {
+      font-size: 0.9rem;
+  }
+
+  .contact-icon {
+      font-size: 1.3rem;
+      margin-right: 6px;
+  }
+
+  .contact-details a {
+      font-size: 0.9rem;
+  }
+
+  .contact-icons {
+      margin-top: 10px;
+  }
+
+  .icon-link {
+      font-size: 1.3rem;
+      margin: 0 5px;
+  }
+
+  .icon {
+      font-size: 1.3rem;
+  }
+}
+
   
