@@ -34,7 +34,7 @@ const Nav = () => {
     <nav>
       <div className="logo">
         <a href="#home">
-          <img src="channels4_profile-removebg-preview.png" alt="Logo" />
+          <img src="./channels4_profile-removebg-preview.png" alt="Logo" />
         </a>
       </div>
       <div className="hamburger" onClick={toggleMenu}>
