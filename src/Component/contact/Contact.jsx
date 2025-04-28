@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 
 export const Contact = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000 }); // Initialize AOS with a duration
+    AOS.init({ duration: 1000 }); 
   }, []);
 
   return (
@@ -20,7 +20,7 @@ export const Contact = () => {
           <FaCode className="contact-icon blue-icon" /> Java Full Stack Developer
         </p>
         <p data-aos="fade-up">
-          <FaMapMarkerAlt className="contact-icon blue-icon" /> Tirunelveli, Tamil Nadu, 627414
+          <FaMapMarkerAlt className="contact-icon blue-icon" /> Bengaluru,karnataka,560068
         </p>
         <p data-aos="fade-up">
           <FaEnvelope className="contact-icon blue-icon" />{" "}

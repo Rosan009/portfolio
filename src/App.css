@@ -26,15 +26,13 @@
     flex-direction: column;
   }
   
-  /* Heading and Paragraph Styles */
   h1, h2, p {
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    text-align: center; /* Ensure text is centered */
+    text-align: center; 
    
   }
   
-  /* Icon container for the floating button */
   .icon-container {
     display: none;
     position: fixed;

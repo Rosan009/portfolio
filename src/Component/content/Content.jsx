@@ -6,7 +6,7 @@ import { FaEnvelope, FaPhoneAlt, FaFileDownload } from 'react-icons/fa';
 import profileImage from '../Img/IMG-20240908-WA0021-removebg.png'; // Adjust the path as necessary
 export default function App() {
   useEffect(() => {
-    AOS.init({ duration: 100000 }); // Initialize AOS with a default animation duration
+    AOS.init({ duration: 100000 });
   }, []);
 
   return (
@@ -29,7 +29,7 @@ export default function App() {
 
         {/* Contact Links */}
         <div className="contact" data-aos="fade-left">
-          <a href="/resume-rosan.pdf" download className="contact-link">
+          <a href="./resume-rosan.pdf" download className="contact-link">
             <FaFileDownload className="icon" />
              Resume
           </a>
